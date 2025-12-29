@@ -1,6 +1,5 @@
 from datetime import datetime
 
-
 class Comment:
     def __init__(self, author_id: uuid.UUID, text: str) -> None:
         self.author_id = author_id
