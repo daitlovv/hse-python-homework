@@ -23,4 +23,4 @@ class Product:
         return self.price
 
     def __repr__(self):
-        return f"Товар '{self.name}' (категория '{self.category}', цена: {self.price}{', скидка ' + str(self.sale) + '%' if self.sale > 0 else ''})"
+        return f"Товар '{self.name}' (категория '{self.category}', цена = {self.price}{', скидка ' + str(self.sale) + '%' if self.sale > 0 else ''})"
