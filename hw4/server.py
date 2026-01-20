@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 from dotenv import dotenv_values
 from .controllers import operation
 
-def get_port():
+def get_port() -> int:
     config = dotenv_values(".env")
     if "PORT" in config:
         return config["PORT"]
