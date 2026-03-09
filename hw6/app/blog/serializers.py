@@ -21,7 +21,8 @@ class CommentSerializer(serializers.ModelSerializer):
     author_id = serializers.IntegerField(write_only=True)
     post_id = serializers.IntegerField(write_only=True)
     total_likes = serializers.IntegerField(read_only=True)
+    
     class Meta:
         model = Comment
-        fields = ['id', 'post', 'post_id', 'author', 'author_id', 'content','created_at', 'updated_at', 'likes', 'total_likes', 'parent']
-        read_only_fields = ['created_at', 'updated_at', 'likes']
+        fields = ['id', 'post', 'post_id', 'author', 'author_id', 'content', 'created_at', 'updated_at', 'likes', 'total_likes', 'parent']
+        read_only_fields = ['created_at', 'updated_at', 'likes', 'post']
